@@ -3,21 +3,24 @@ body {
     color: #000000;
     background-color: #e7dfd8;
 }
+
 /* MENU */
 header {
     background-color: #e8b3ce;
     padding-bottom: 46px;
     position: relative;
 }
+
 * {
     padding:0;
     margin:0;
     vertical-align:baseline;
     list-style:none;
     border:0
-    }
+}
 
 @import url(https://fonts.google.com/specimen/Dancing+Script);
+
 a {
   color: #ff7013;
   text-decoration: none;
@@ -29,7 +32,7 @@ a {
     padding: 0 20px 0 0;
 }
 
- .menu-img {
+.menu-img {
     width: 6%;
     float: left;
     margin-top: 80px;
@@ -143,7 +146,6 @@ div.op1 {
     padding: 1vw 2vw 1vw 2vw;
     min-width:40vw;
     font-size: 15px;
-  
 }
 
 .linhavertical {
@@ -188,6 +190,7 @@ div.op2 {
     flex-direction: column;
     width: 280px;
 }
+
 .containerP {
     border-radius: 50%;
     height: 312px;
@@ -196,6 +199,7 @@ div.op2 {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 400px;
 }
+
 .containerP:after {
     background-color: #f2f2f2;
     content: "";
@@ -204,9 +208,11 @@ div.op2 {
     top: 390px;
     width: 100%;
 }
+
 .containerP:hover {
     transform: scale(0.54);
 }
+
 .container-inner {
     clip-path: path(
     "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
@@ -215,6 +221,7 @@ div.op2 {
     transform-origin: 50%;
     top: -200px;
 }
+
 .circle {
     background-color: #fee7d3;
     border-radius: 50%;
@@ -226,6 +233,7 @@ div.op2 {
     top: 210px;
     width: 380px;
 }
+
 .img {
     pointer-events: none;
     position: relative;
@@ -233,6 +241,7 @@ div.op2 {
     transform-origin: 50% bottom;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .container:hover .img {
     transform: translateY(0) scale(1.2);
 }
@@ -242,6 +251,7 @@ div.op2 {
     height: 1px;
     width: 160px;
 }
+
 .name {
     color: #404245;
     font-size: 36px;
@@ -249,6 +259,7 @@ div.op2 {
     margin-top: 16px;
     text-align: center;
 }
+
 .title {
     color: #6e6e6e;
     font-family: arial;
@@ -267,6 +278,7 @@ div.op2 {
     grid-gap: 15px;
     justify-items: center;
 }
+
 .grade {
     width: 300px;
     height: 220px;
@@ -277,7 +289,6 @@ div.op2 {
     width: 100%;
     margin-top: 30px;
 }
-
 
 /* RODAPÉ */
 footer {
