@@ -1,247 +1,212 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sobre Nós</title>
 
-  <link rel="shortcut icon" href="Palittes\images\cakepop.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/cakepop.png" type="image/x-icon">
 
-  <title>Sobre nós</title>
-  <style>
-    
-body {
-  margin: 30px;
-  font-family: sans-serif;
-}
+  <link rel="stylesheet" href="/css/sobre-nos.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 240px;
-    grid-auto-flow: dense;
-    grid-gap: 15px;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.horizontal {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.vertical {
-  grid-row: span 2;
-}
-
-.open-button {
-  padding: 4px;
-  border-radius: 12px;
-  border: none;
-  background-color: #333;
-  position: fixed;
-  right: 30px;
-  bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.open-button:hover {
-  cursor: pointer;
-  outline: 1px solid rgba(255, 255, 255, .75);
-  transition: 250ms ease-out;
-}
-
-.open-button > .emoji {
-  font-size: 32px;
-  padding: 12px;
-}
-
-.open-button > .text {
-  color: white;
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-/* Styling the dialog (the open state): */
-
-dialog {
-  width: 90%;
-  height: 80%;
-  max-width: 700px;
-  border: .5px solid lightgrey;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 0.5em;
-  position: fixed;
-  scrollbar-width: thin;
-}
-    @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
-body {
-  align-items: center;
-  background-color: #f2f2f2;
-  display: flex;
-  font-family: "Merriweather", serif;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-.person {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-}
-.container {
-  border-radius: 50%;
-  height: 312px;
-  -webkit-tap-highlight-color: transparent;
-  transform: scale(0.48);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 400px;
-}
-.container:after {
-  background-color: #f2f2f2;
-  content: "";
-  height: 10px;
-  position: absolute;
-  top: 390px;
-  width: 100%;
-}
-.container:hover {
-  transform: scale(0.54);
-}
-.container-inner {
-  clip-path: path(
-    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
-  );
-  position: relative;
-  transform-origin: 50%;
-  top: -200px;
-}
-.circle {
-  background-color: #fee7d3;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 380px;
-  left: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 210px;
-  width: 380px;
-}
-.img {
-  pointer-events: none;
-  position: relative;
-  transform: translateY(20px) scale(1.15);
-  transform-origin: 50% bottom;
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.container:hover .img {
-  transform: translateY(0) scale(1.2);
-}
-.img1 {
-  left: 22px;
-  top: 164px;
-  width: 340px;
-}
-.img2 {
-  left: -46px;
-  top: 174px;
-  width: 444px;
-}
-.img3 {
-  left: -16px;
-  top: 144px;
-  width: 466px;
-}
-.divider {
-  background-color: #ca6060;
-  height: 1px;
-  width: 160px;
-}
-.name {
-  color: #404245;
-  font-size: 36px;
-  font-weight: 600;
-  margin-top: 16px;
-  text-align: center;
-}
-.title {
-  color: #6e6e6e;
-  font-family: arial;
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 4px;
-}
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/script.js" defer></script>
 </head>
 
 <body>
-   <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img src="https://replit.com/@Palitettes/Palittes#images/7470561-fundo-abstrato-estetico-liquefeito-gr%C3%A1tis-foto.jpg"  class="circle">
-          <img src="" class="img img1">
-        </div>
-      </div>
-     
-      <div class="divider"></div>
-     
-      <div class="name">Maria Gabriela</div>
-      <div class="title">Marketing </div>
+  <header>
+    <img class="menu-img" src="../images/menu.png" alt="Menu">
+    <img class="logo" src="../images/palittes.png" alt="Logo do Palittes">
+
+
+    <h1>
+      <font face="Kaushan script">Palittes</font>
+    </h1>
+
+    <hr>
+
+    <p>O lugar onde seus doces são no palito</p>
+
+    <nav>
+      <ul class="menu">
+        <li class="li1"><a href="/index.html">Página Inicial</a></li>
+        <li><a href="/html/Contato.html">Contato</a></li>
+        <li><a href="html/Secret.html">Área secreta</a></li>
+        <li class="pedido"><a href="mailto:someone@microsoft.com?subject=Hello%20again">Peça o seu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cont">
+
+
+    <div class="titulo">
+      <h1>Conheça a nossa história</h1>
+      <img class="frontimg" src="/images/grupo.jpg">
     </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img src="https://replit.com/@Palitettes/Palittes#images/7470561-fundo-abstrato-estetico-liquefeito-gr%C3%A1tis-foto.jpg"  class="circle"  >
-        <img src="https://replit.com/@Palitettes/Palittes#images/silhueta.png" class="img img2">      
+    <div class = "linhavertical"></div>
+    <div class="op1">
+            <p>Somos um grupo de amigas que se conheceram
+              no fundamental e desde então permanecemos 
+              juntas. A partir da visão orientada 
+              pela professora decidimos criar uma empresa
+              a qual expressasse a nossa parceria e amizade.
+              E nada melhor do que um doce para demonstrar 
+              o afeto e carinho entre a gente.
+    
+      </p>
+
+    </div>
+    
+
+   
+    <div class="op2">
+      
+      <p> Palittes: microempresa de doces que surgiu  
+        a partir de um trabalho  proposto na escola.
+        Com a ideia inovadora a qual  traria 
+        praticidade aos clientes, cria-se
+        um cardápio de doces no palito.</p>
+    </div>
+  </div>
+  <br>
+
+
+
+
+  <h1>Nossa equipe</h1>
+
+  <div class="linha">
+    
+  <div class="coluna-33">
+        <div class="person">
+    <div class="containerP">
+      <div class="container-inner">
+        <img
+          class="circle"
+          src="images/brigadeiro-gourmet-02 .png" />
           
         </div>
       </div>
       <div class="divider"></div>
-      <div class="name">Luiza Marçal</div>
-      <div class="title">Logística e RH</div>
+      <div class="name">Alma</div>
+      <div class="title">Product Manager</div>
     </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img
-            class="circle"
-          />
-          <img
-            class="img img3"
-          />
+  </div>
+
+    
+  <div class="coluna-33">
+     <div class="person">
+    <div class="containerP">
+      <div class="container-inner">
+        <img
+          class="circle"
+          src="images/brigadeiro-gourmet-02 .png" />
+          
         </div>
       </div>
       <div class="divider"></div>
-      <div class="name">Tharllyene Soares</div>
-      <div class="title">T.I</div>
-    </div> <br>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><br>
-
-<div class="cont2">
-      <div><img src="https://mj-gallery.com/5fed34f0-b8cb-4d93-b7f2-58195435cbd6/grid_0.png"></div>
-    
-      <div><img src="https://mj-gallery.com/f3cea2c7-84b1-4c88-8be6-1383a34f1095/grid_0.png"></div>
-     
-      <div><img src="https://mj-gallery.com/f5d95068-38af-451a-8db0-3bd97401c16b/grid_0.png"></div>
-      <div><img src="https://mj-gallery.com/1f7fbe9c-76f5-495e-8469-f1ba43e76cf4/grid_0.png"></div>
-      
-           <div><img src="https://mj-gallery.com/5930d530-00b6-41b8-9c60-569192e46e3b/grid_0.png"></div>
-      <div><img src="https://mj-gallery.com/ca7555e1-87de-45ef-960e-ee4f2e25397d/grid_0.png"></div>
-   <div><img src="https://mj-gallery.com/1f7fbe9c-76f5-495e-8469-f1ba43e76cf4/grid_0.png"></div>
-      
-           <div><img src="https://mj-gallery.com/5930d530-00b6-41b8-9c60-569192e46e3b/grid_0.png"></div>
-      <div><img src="https://mj-gallery.com/ca7555e1-87de-45ef-960e-ee4f2e25397d/grid_0.png"></div>
+      <div class="name">Alma</div>
+      <div class="title">Product Manager</div>
+    </div>
+  </div>
+  <div class="coluna-33">
+     <div class="person">
+    <div class="containerP">
+      <div class="container-inner">
+        <img
+          class="circle"
+          src="images/brigadeiro-gourmet-02 .png" />
+          
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="name">Alma</div>
+      <div class="title">Product Manager</div>
+    </div>
+  </div>
 </div>
   
+<div class="linha">
+  <div class="coluna-50">
+     <div class="person">
+    <div class="containerP">
+      <div class="container-inner">
+        <img
+          class="circle"
+          src="images/brigadeiro-gourmet-02 .png" />
+          
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="name">Alma</div>
+      <div class="title">Product Manager</div>
+    </div>
+  </div>
+  
+  <div class="coluna-50">
+     <div class="person">
+    <div class="containerP">
+      <div class="container-inner">
+        <img
+          class="circle"
+          src="images/brigadeiro-gourmet-02 .png" />
+          
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="name">Alma</div>
+      <div class="title">Product Manager</div>
+    </div>
+  </div>
+</div>
+
+  <img class="fundo" src="images/fundo.png" alt="">
+
+  <div class="cont2">
+    <div><img class="grade" src="images/f1-removebg-preview.png"></div>
+
+    <div><img class="grade" src="images/brigadeiro-1024x576.jpg"></div>
+
+    <div><img class="grade" src="images/Alfajor-Maria-01-500x500.png"></div>
+    <div><img class="grade" src="images/Capturar.PNG"></div>
+
+    <div><img class="grade" src="images/f3.PNG"></div>
+    <div><img  class="grade" src="images/maca-do-amor-2 (1).png"></div>
+    <div><img class="grade" src="images/brigadeiro-gourmet-02 .png"></div>
+
+    <div><img class="grade" src="images/nn.PNG"></div>
+    <div><img class="grade" src="images/frase3.png"></div>
+  </div>
+
+
+  <footer>
+    <div id="divSocial">
+
+      <h4>Redes Sociais</h4>
+      <a target="_blank" href="https://www.instagram.com/?hl=en">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png"></img></a>
+
+      <a target="_blank" href="https://www.whatsapp.com/">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png"></img></a>
+    </div>
+
+    <div id="pagamento">
+      <h4>Formas de pagamento</h4>
+      <a target="_blank" href="https://">
+        <img src="https://cdn-icons-png.flaticon.com/128/2543/2543363.png"></img></img></a>
+
+      <a target="_blank" href="https://www.pix.com/">
+        <img src="https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix.png"></img></a>
+    </div>
+
+    <p class="copyright">&copy; Copyright Palittes - 2022</p>
+  </footer>
+
 </body>
+
+
 
 </html>

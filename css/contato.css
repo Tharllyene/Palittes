@@ -6,6 +6,112 @@ body {
   	background-color: #ec576b; 
 }
 
+header {
+    background: rgba(255, 255, 255, 0.10);
+    padding-bottom: 60px;
+    position: relative;
+}
+
+a {
+  color: #ff7013;
+  text-decoration: none;
+}
+
+.logo {
+    width: 12%;
+    float: right;
+    padding: 0 20px 0 0;
+}
+
+ .menu-img {
+    width: 6%;
+    float: left;
+    margin-top: 80px;
+    padding-left: 15px;
+    border-left: 60px;
+    background: #ee818f;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #000000;
+    box-align: center;
+    width: 50%;
+    position: absolute;
+    margin-left: 22%;
+}
+
+.menu {
+    list-style:none;
+    position:center;
+}
+
+.pedido {
+    background-color: #ee818f;
+    border-radius: 10px;
+}
+
+.alinhamento {
+    padding-left: 18%;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    font-size: 25px bolder;
+    max-width: 25%;
+    text-align: center;
+}
+    
+.menu li a {
+    font-size: clamp(0.9em, 0.5em + 0.5vw, 1em);
+    color:rgb(0, 0, 0); 
+    text-decoration:none; 
+    padding:5px 40px; 
+    display:block;
+    border-radius: 10px;
+    box-align: center;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    background:#df5467;
+    color:rgb(0, 0, 0);
+}
+    
+.menu li  ul {
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:rgb(255, 143, 233);
+    display:none;
+}
+    
+.menu li:hover ul, .menu li.over ul {
+    display:block;
+}
+
+.title {
+	color: black;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+h1 {
+	color: #ec576b;
+}
+
+.descricao {
+	font-size: clamp(1em, 0.9em + 0.5vw, 1.5em);
+	text-align: center;
+	padding: 15px 0 40px;
+}
+
+
 .contact_form {	
 	width: 450px; 
  	 height: auto;
