@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="..\css\contato.css"
+
+<body>	
+
+	<div class="contact_form">
+		<div class="formulario">			
+    		<h1>Nos dê o seu feedback</h1>
+			<h3>Envie a sua mensagem e responderemos em breve.</h3>
+
+			<form action="https://formspree.io/f/{form_id}" method="post">				
+
+				<p>
+					<label for="nome" class="colocar_nome">Nome
+						<span class="obrigatorio">*</span>
+					</label>
+					<input type="text" name="introduzir_nome" id="nome" required="obrigatorio" placeholder="Seu nome">
+				</p>
+							
+				<p>
+					<label for="email" class="colocar_email">Email
+						<span class="obrigatorio">*</span>
+					</label>
+					<input type="email" name="introduzir_email" id="email" required="obrigatorio" placeholder="Seu email">
+				</p>	
+							
+				<p>
+					<label for="assunto" class="colocar_asunto">Assunto
+						<span class="obrigatorio">*</span>
+					</label>
+					<input type="text" name="introduzir_assunto" id="assunto" required="obrigatorio" placeholder="Sobre qual produto gostaria de falar?">
+				</p>		
+							
+				<p>
+					<label for="mensagem" class="colocar_mensagem">Mensagem
+						<span class="obrigatorio">*</span>
+					</label>                     
+                    <textarea name="introduzir_mensagem" class="texto_mensagem" id="mensagem" required="obrigatorio" placeholder="Escreva seu feedback aqui..."></textarea> 
+                </p>	  								
+							
+								
+				<div class="panel pink">
+					<button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+				</div>
+
+				<p class="aviso">
+					<span class="obrigatorio"> * </span>Todos os campos são obrigatórios.
+				</p>					
+						
+			</form>
+		</div>	
+	</div>
+
+</body>
+</html>

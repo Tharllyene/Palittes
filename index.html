@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Palittes</title>
+
+  <link rel="shortcut icon" href="images/cakepop.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img class="menu-img" src="images/menu.png" alt="Menu">
+    <img class="logo" src="images/palittes.png" alt="Logo do Palittes">
+
+
+    <h1>Palittes</h1>
+
+    <hr>
+
+    <p>O lugar onde seus doces são no palito</p>
+
+    <nav>
+      <ul class="menu">
+        <li class="li1"><a href="#produtos">Produtos</a></li>
+        <li><a href="html/Contato.html" target="_blank">Contato</a></li>
+        <li><a href="html/Sobre-nos.html" target="_blank">Sobre nós</a></li>
+        <li><a href="html/Secret.html" target="_blank">Área secreta</a></li>
+        <li class="pedido"><a href="mailto:someone@microsoft.com?subject=Hello%20again">Peça o seu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="carrossel">
+    <div class="carrossel-inner">
+      <input class="carrossel-open" type="radio" id="carrossel-1" name="carrossel" checked="checked" hidden=""
+        aria-hidden="true">
+      <div class="carrossel-item">
+        <img src="images/alfajor.png">
+      </div>
+      <input class="carrossel-open" type="radio" id="carrossel-2" name="carrossel" hidden="" aria-hidden="true">
+      <div class="carrossel-item">
+        <img src="images/cake-pop.png">
+      </div>
+      <input class="carrossel-open" type="radio" id="carrossel-3" name="carrossel" hidden="" aria-hidden="true">
+      <div class="carrossel-item">
+        <img src="images/maca.png">
+      </div>
+      <input class="carrossel-open" type="radio" id="carrossel-4" name="carrossel" hidden="" aria-hidden="true">
+      <div class="carrossel-item">
+        <img src="images/brigadeiro.png">
+      </div>
+      <label for="carrossel-3" class="carrossel-control prev control-1">‹</label>
+      <label for="carrossel-2" class="carrossel-control next control-1">›</label>
+      <label for="carrossel-1" class="carrossel-control prev control-2">‹</label>
+      <label for="carrossel-3" class="carrossel-control next control-2">›</label>
+      <label for="carrossel-2" class="carrossel-control prev control-3">‹</label>
+      <label for="carrossel-4" class="carrossel-control next control-3">›</label>
+      <label for="carrossel-3" class="carrossel-control prev control-4">‹</label>
+      <label for="carrossel-1" class="carrossel-control next control-4">›</label>
+
+      <ol class="carrossel-indicators">
+        <li>
+          <label for="carrossel-1" class="carrossel-bullet">•</label>
+        </li>
+        <li>
+          <label for="carrossel-2" class="carrossel-bullet">•</label>
+        </li>
+        <li>
+          <label for="carrossel-3" class="carrossel-bullet">•</label>
+        </li>
+        <li>
+          <label for="carrossel-4" class="carrossel-bullet">•</label>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <img class="fundo" src="images/fundo.png" alt="">
+
+  <section id="produtos">
+    <h2>Conheça nossos produtos</h2>
+
+    <img class="produtos-img p1" src="images/produtos-alfajor.jpg" alt="produtos">
+    <img class="produtos-img" src="images/produtos-cakepop.jpg" alt="produtos">
+    <img class="produtos-img" src="images/produtos-maca.jpg" alt="produtos">
+    <img class="produtos-img" src="images/produtos-brigadeiro.jpg" alt="produtos">
+
+    <ul class="produtos-itens">
+      <li>Alfajor</li>
+      <li>Cake pop</li>
+      <li>Maça do amor</li>
+      <li>Brigadeiro</li>
+    </ul>
+
+  </section>
+  <section>
+    <h3>Venha experimentar já</h3>
+    <ul class="btn-seta bnt-arrow">
+      <li><a href="tel:+55"><img class="arrow" src="images/arrow.png"></a></a></li>
+    </ul>
+    <img class="background-doces" src="images/doces-fundo.png" alt="Foto com alguns doces de fundo">
+  </section>
+
+  <footer>
+    <div id="divSocial">
+
+      <h4>Redes Socias</h4>
+      <a target="_blank" href="https://www.instagram.com/?hl=en">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png"></img></a>
+
+      <a target="_blank" href="https://www.whatsapp.com/">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png"></img></a>
+    </div>
+
+    <div id="pagamento">
+      <h4>Formas de pagamento</h4>
+      <a target="_blank" href="https://">
+        <img src="https://cdn-icons-png.flaticon.com/128/2543/2543363.png"></img></img></a>
+
+      <a target="_blank" href="https://www.pix.com/">
+        <img src="https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix.png"></img></a>
+    </div>
+
+    <p class="copyright">&copy; Copyright Palittes - 2022</p>
+  </footer>
+</body>
+
+</html>
