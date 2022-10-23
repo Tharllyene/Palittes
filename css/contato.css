@@ -13,8 +13,8 @@ header {
 }
 
 a {
-  color: #ff7013;
-  text-decoration: none;
+	color: #ff7013;
+	text-decoration: none;
 }
 
 .logo {
@@ -111,7 +111,6 @@ h1 {
 	padding: 15px 0 40px;
 }
 
-
 .contact_form {	
 	width: 450px; 
  	 height: auto;
@@ -138,7 +137,7 @@ input {
 }
 
 textarea {
-  background-color: #fbfbfb; 
+ 	background-color: #fbfbfb; 
 	width: 405px; 
 	height: 150px; 
 	border-radius: 5px;  
