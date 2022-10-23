@@ -4,7 +4,7 @@
     vertical-align:baseline;
     list-style:none;
     border:0
-    }
+}
 
 @import url(https://fonts.google.com/specimen/Dancing+Script);
 
@@ -31,88 +31,87 @@ a {
     padding: 0 20px 0 0;
 }
 
- .menu-img {
-    width: 6%;
-    float: left;
-    margin-top: 80px;
-    padding-left: 15px;
-    border-left: 60px;
-    background: #b2cecd;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+.menu-img {
+  width: 6%;
+  float: left;
+  margin-top: 80px;
+  padding-left: 15px;
+  border-left: 60px;
+  background: #b2cecd;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 h1 {
-    font-size: 50px;
-    text-align: center;
+  font-size: 50px;
+  text-align: center;
 }
 
 hr {
 	border: 1;
 	border-top: 1px solid #000000;
-    box-align: center;
-    width: 50%;
-    position: absolute;
-    margin-left: 22%;
+  box-align: center;
+  width: 50%;
+  position: absolute;
+  margin-left: 22%;
 }
 
 p {
-    font-size: clamp(1em, 1em + 0.5vw, 1.5em);
-    text-align: center;
-    padding: 15px 0 40px;
+  font-size: clamp(1em, 1em + 0.5vw, 1.5em);
+  text-align: center;
+  padding: 15px 0 40px;
 }
 
 .menu {
-    list-style:none;
-    position:center;
+  list-style:none;
+  position:center;
 }
 
 .pedido {
-    background-color: #b2cecd;
-    border-radius: 10px;
+  background-color: #b2cecd;
+  border-radius: 10px;
 }
     
 .li1 {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .menu li {
-    position: relative;
-    float: left;
-    font-size: 25px bolder;
-    max-width: 22%;
-    text-align: center;
+  position: relative;
+  float: left;
+  font-size: 25px bolder;
+  max-width: 22%;
+  text-align: center;
 }
     
 .menu li a {
   font-size: clamp(0.9em, 0.5em + 0.5vw, 1em);
-    color:rgb(0, 0, 0); 
-    text-decoration:none; 
-    padding:5px 40px; 
-    display:block;
-    border-radius: 10px;
-    box-align: center;
-    text-transform: uppercase;
+  color:rgb(0, 0, 0); 
+  text-decoration:none; 
+  padding:5px 40px; 
+  display:block;
+  border-radius: 10px;
+  box-align: center;
+  text-transform: uppercase;
 }
 
 .menu li a:hover {
-    background:#e69fc4;
-    color:rgb(0, 0, 0);
+  background:#e69fc4;
+  color:rgb(0, 0, 0);
 
 }
     
 .menu li  ul {
-    position:absolute;
-    top:25px;
-    left:0;
-    background-color:rgb(255, 143, 233);
-    display:none;
+  position:absolute;
+  top:25px;
+  left:0;
+  background-color:rgb(255, 143, 233);
+  display:none;
 }
     
 .menu li:hover ul, .menu li.over ul {
-    display:block;
+  display:block;
 }
-
 
 /* CARROSSEL*/
 
@@ -230,19 +229,19 @@ p {
 }
 
 .fundo {
-    width: 100%;
-    margin-top: 30px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 section .produtos-itens {
-    background-color: #e7dfd8;
-    margin: 0;
+  background-color: #e7dfd8;
+  margin: 0;
 }
 
 h2 {
-    margin: 40px 0;
-    font-size: 40px;
-    text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+  text-align: center;
 }
 
 #produtos {
@@ -268,7 +267,7 @@ h2 {
 }
 
 ul li .produtos-itens {
-    margin: 0;
+  margin: 0;
 }
 
 .produtos-itens li {
