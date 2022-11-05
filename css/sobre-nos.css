@@ -146,6 +146,7 @@ div.op1 {
     padding: 1vw 2vw 1vw 2vw;
     min-width:40vw;
     font-size: 15px;
+    padding-bottom: 60px;
 }
 
 .linhavertical {
@@ -189,6 +190,26 @@ div.op2 {
     display: flex;
     flex-direction: column;
     width: 280px;
+}
+
+.spaceI{
+    padding-left: 25%;
+}
+
+.spaceLe{
+    padding-left: 15%;
+}
+
+.spaceLu {
+    padding-left: 5%;
+}
+
+.spaceMa{
+    padding-left: 45%;
+}
+
+.spaceTha{
+    padding-left: 5%;
 }
 
 .containerP {
